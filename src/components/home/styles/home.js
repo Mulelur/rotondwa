@@ -3,11 +3,11 @@ import styled from "styled-components/macro";
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  padding: 1.8rem;
+  padding: 1.2rem;
   // margin-left: 3rem;
   color: #2b2b2b;
   @media (max-width: 760px) {
-    margin-left: 3rem;
+    margin-left: 1.2rem;
   }
   @media (max-width: 876px) {
     flex-direction: column;
@@ -31,6 +31,10 @@ export const Text = styled.p`
   font-weight: 400;
   line-height: 1.8;
   margin-bottom: 2.8rem;
+  @media (max-width: 760px) {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -44,6 +48,10 @@ export const Title = styled.h1`
   letter-spacing: 1px;
   font-family: Canela Web, Times, serif;
   font-weight: 700;
+  @media (max-width: 760px) {
+    font-size: 4.1rem;
+    margin-top: 1.5rem;
+  }
 `;
 
 export const Link = styled.a`

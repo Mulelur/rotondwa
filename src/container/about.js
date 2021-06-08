@@ -25,7 +25,9 @@ export default function AboutContainer() {
           </About.Text>
         </About.Column>
         <About.Column>
-          <About.Image src={aboutImg} />
+          <About.Avatar>
+            <About.Img></About.Img>
+          </About.Avatar>
         </About.Column>
       </About.Row>
       <About.BottomCol></About.BottomCol>

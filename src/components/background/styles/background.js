@@ -1,14 +1,17 @@
 import styled from "styled-components/macro";
+import homebgimage from "../../../assets/bgImage/ilmenskie-tree-int-bough-4.svg";
 import { aboutBgColor, expertiseBgColor, homeBgColor } from "../../../color";
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
 `;
 
 export const Home = styled.div`
   background-color: ${homeBgColor};
+  // background-image: url(${homebgimage});
+  // background-size: cover;
 `;
 
 export const About = styled.div`

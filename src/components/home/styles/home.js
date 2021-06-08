@@ -16,7 +16,6 @@ export const Container = styled.div`
 `;
 
 export const Column = styled.div`
-  margin-top: 2rem;
   padding: 1rem;
   width: 45vw;
   @media (max-width: 876px) {
@@ -51,6 +50,8 @@ export const Link = styled.a`
   margin-top: 1.5rem;
   font-size: 1.7rem;
   color: #fff;
+
+  text-decoration: none;
 `;
 
 export const Img = styled.img`

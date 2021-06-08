@@ -9,6 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Home = styled.div`
+  width: 100vw;
   background-color: ${homeBgColor};
   // background-image: url(${homebgimage});
   // background-size: cover;

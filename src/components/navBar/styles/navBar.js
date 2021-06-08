@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { navColorhover1, textColor1 } from "../../../color";
+import { homeBgColor, navColorhover1, textColor1 } from "../../../color";
 import { Link as ReachRouterLink } from "react-router-dom";
 
 export const Container = styled.nav`
@@ -67,7 +67,9 @@ export const Slider = styled.div`
   right: 0;
   width: 50%;
   display: none;
-  background-color: blue;
+  background-color: ${homeBgColor};
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   @media (max-width: 515px) {
     display: block;
   }

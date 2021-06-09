@@ -1,7 +1,12 @@
 import React from "react";
 import { Expertise } from "../components";
-import img from "../assets/site.png";
+import img from "../assets/tondi_1.jpeg";
 import { Heading2 } from "../components/expertise/styles/expertise";
+import { highSchool, vut } from "../components/expertise/data/subjectsData";
+import {
+  URGENTANDIMPORTANT,
+  URGENTBUTNOTIMPORTANT,
+} from "../components/expertise/data/manegementMatrixData";
 
 export default function ExpertiseContainer() {
   return (
@@ -30,37 +35,45 @@ export default function ExpertiseContainer() {
           </Expertise.Text>
         </Expertise.Col>
         <Expertise.Col>
-          <Expertise.Img src={img} />
+          {/* <Expertise.Avatar>
+            <Expertise.Image></Expertise.Image>
+          </Expertise.Avatar> */}
+          <Expertise.Avatar>
+            <Expertise.Image1></Expertise.Image1>
+          </Expertise.Avatar>
         </Expertise.Col>
       </Expertise.Row>
-      <Expertise.Row>
+      <Expertise.SubjectRow>
         <Expertise.Col>
-          <Heading2>## Many Thanks</Heading2>
+          <Heading2>## High school</Heading2>
           <Expertise.List>
-            <Expertise.ListItem>These Legends</Expertise.ListItem>
-            <Expertise.ListItem>CSS Tricks</Expertise.ListItem>
-            <Expertise.ListItem>Web Field Manual</Expertise.ListItem>
+            {highSchool.map((item) => {
+              return <Expertise.ListItem>{item.sbj}</Expertise.ListItem>;
+            })}
           </Expertise.List>
         </Expertise.Col>
-      </Expertise.Row>
-      <Expertise.Heading2>Manegement Matrix</Expertise.Heading2>
+        <Expertise.Col>
+          <Heading2>## Modules</Heading2>
+          <Expertise.List>
+            {vut.map((item) => {
+              return <Expertise.ListItem>{item.sbj}</Expertise.ListItem>;
+            })}
+          </Expertise.List>
+        </Expertise.Col>
+      </Expertise.SubjectRow>
+      <Expertise.MatrixTitleContainer>
+        <Expertise.Heading2>Manegement Matrix</Expertise.Heading2>
+      </Expertise.MatrixTitleContainer>
       <Expertise.Row>
         <Expertise.Matrix>
           <Expertise.MatrixHeader>URGENT AND IMPORTANT</Expertise.MatrixHeader>
           <Expertise.MatrixBody>
             <Expertise.MatrixList>
-              <Expertise.MatrixListItem>
-                "Getting my degree of electrical engineering"
-              </Expertise.MatrixListItem>
-              <Expertise.MatrixListItem>
-                "Getting a new laptop",
-              </Expertise.MatrixListItem>
-              <Expertise.MatrixListItem>
-                "Getting a car",
-              </Expertise.MatrixListItem>
-              <Expertise.MatrixListItem>
-                "Opening a business",
-              </Expertise.MatrixListItem>
+              {URGENTANDIMPORTANT.map((item) => {
+                return (
+                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
+                );
+              })}
             </Expertise.MatrixList>
           </Expertise.MatrixBody>
         </Expertise.Matrix>
@@ -70,42 +83,11 @@ export default function ExpertiseContainer() {
           </Expertise.MatrixHeader>
           <Expertise.MatrixBody>
             <Expertise.MatrixList>
-              <Expertise.MatrixListItem>
-                Getting a new cell phone
-              </Expertise.MatrixListItem>
-              <Expertise.MatrixListItem>
-                Getting new clothes
-              </Expertise.MatrixListItem>
-            </Expertise.MatrixList>
-          </Expertise.MatrixBody>
-        </Expertise.Matrix>
-        <Expertise.Matrix>
-          <Expertise.MatrixHeader>
-            NOT URGENT BUT IMPORTANT
-          </Expertise.MatrixHeader>
-          <Expertise.MatrixBody>
-            <Expertise.MatrixList>
-              <Expertise.MatrixListItem>
-                Getting married
-              </Expertise.MatrixListItem>
-              <Expertise.MatrixListItem>
-                Getting a house
-              </Expertise.MatrixListItem>
-            </Expertise.MatrixList>
-          </Expertise.MatrixBody>
-        </Expertise.Matrix>
-        <Expertise.Matrix>
-          <Expertise.MatrixHeader>
-            NOT URGENT AND ALSO NOT IMPORTANT
-          </Expertise.MatrixHeader>
-          <Expertise.MatrixBody>
-            <Expertise.MatrixList>
-              <Expertise.MatrixListItem>
-                Getting famous
-              </Expertise.MatrixListItem>
-              <Expertise.MatrixListItem>
-                Being an alcoholic person
-              </Expertise.MatrixListItem>
+              {URGENTBUTNOTIMPORTANT.map((item) => {
+                return (
+                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
+                );
+              })}
             </Expertise.MatrixList>
           </Expertise.MatrixBody>
         </Expertise.Matrix>

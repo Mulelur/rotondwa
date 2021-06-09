@@ -24,8 +24,8 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   padding: 1.5rem;
-  font-weight: 700;
-  font-weight: 500;
+  font-weight: 800;
+  line-height: 1.5;
   &:hover {
     color: ${navColorhover1};
   }
@@ -36,6 +36,7 @@ export const NavLink = styled(ReachRouterLink)`
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
+  transition: all 0.2s ease;
   &::after {
     position: absolute;
     top: 0;
@@ -48,9 +49,7 @@ export const NavLink = styled(ReachRouterLink)`
     color: transparent;
     line-height: 2;
     text-decoration: underline;
-    -webkit-text-decoration-style: wavy;
     text-decoration-style: wavy;
-    -webkit-text-decoration-color: #fff;
     text-decoration-color: #fff;
   }
 `;

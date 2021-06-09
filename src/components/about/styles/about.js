@@ -11,13 +11,19 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: flex;
+  justify-content: space-between;
   @media (max-width: 479px) {
     flex-direction: column;
     align-items: center;
   }
 `;
 
-export const Column = styled.div``;
+export const Column = styled.div`
+  max-width: 50%;
+  @media (max-width: 479px) {
+    max-width: 100%;
+  }
+`;
 
 export const Text = styled.p`
   color: #2b2b2b;
@@ -55,14 +61,29 @@ export const Title = styled.h1`
 `;
 
 export const Avatar = styled.div`
+  text-align: center;
+  margin-top: 20rem;
+  padding-left: 5rem;
   @media (max-width: 768px) {
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 250px;
+    min-height: 250px;
+    margin-top: 20rem;
+    padding-left: 5rem;
   }
   @media (max-width: 1040px) {
     margin-bottom: 30px;
+    margin-top: 20rem;
+    padding-left: 5rem;
   }
 
+  @media (max-width: 768px) {
+    min-width: 180px;
+    min-height: 180px;
+    padding-left: 5rem;
+  }
+  @media (max-width: 479px) {
+    margin-top: 5rem;
+  }
   min-width: 300px;
   min-height: 300px;
   position: relative;

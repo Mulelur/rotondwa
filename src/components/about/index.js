@@ -46,3 +46,7 @@ About.Row = function AboutRow({ children, ...restProps }) {
 About.Img = function AboutImage({ children, ...restProps }) {
   return <Img {...restProps}>{children}</Img>;
 };
+
+About.Link = function AboutLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
+};

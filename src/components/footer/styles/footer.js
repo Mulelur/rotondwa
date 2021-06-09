@@ -5,7 +5,7 @@ export const Container = styled.div`
   margin-top: 8rem;
   padding: 2rem;
   padding-bottom: 0;
-  color: #2b2b2b;
+  color: inherit;
   @media (max-width: 560px) {
     margin-top: 7.2rem;
     padding: 0.7rem;
@@ -43,7 +43,8 @@ export const Heading3 = styled.h3`
 export const Text = styled.p`
   max-width: 28.125rem;
   padding-right: 1rem;
-  color: #2b2b2b;
+  // color: #2b2b2b;
+  color: inherit;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8;

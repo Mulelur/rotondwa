@@ -1,6 +1,7 @@
 import React from "react";
 import { About } from "../components";
 import aboutImg from "../assets/tondi_1.jpeg";
+import cv from "../assets/cv/Rotonda-Mulelu.pdf";
 
 export default function AboutContainer() {
   return (
@@ -22,6 +23,12 @@ export default function AboutContainer() {
             Personally, I love surfing and playing music, I am obsessed with my
             camper van 🚐 and I try to get away in it as much as possible. I am
             most happy in the water 🏄‍♂️.
+          </About.Text>
+          <About.Text>
+            <About.Link href={cv} target="_blank">
+              Dawonload cv &#8594
+            </About.Link>
+            <About.Link>Download cover letter &#8594</About.Link>
           </About.Text>
         </About.Column>
         <About.Column>

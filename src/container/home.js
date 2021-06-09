@@ -21,7 +21,7 @@ export default function HomeContainer() {
                 .typeString("I Am A Digital Designer.")
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString("I Am A Softwer Developer from the South.")
+                .typeString("I'M A Softwer Developer from the South.")
                 .start();
             }}
           />

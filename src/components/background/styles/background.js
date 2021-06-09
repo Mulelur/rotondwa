@@ -1,6 +1,12 @@
 import styled from "styled-components/macro";
 import homebgimage from "../../../assets/bgImage/ilmenskie-tree-int-bough-4.svg";
-import { aboutBgColor, expertiseBgColor, homeBgColor } from "../../../color";
+import {
+  aboutBgColor,
+  contactBgColor,
+  expertiseBgColor,
+  hobbiesBgColor,
+  homeBgColor,
+} from "../../../color";
 
 export const Container = styled.div`
   display: flex;
@@ -10,6 +16,7 @@ export const Container = styled.div`
 
 export const Home = styled.div`
   width: 100vw;
+  height: 100vh;
   background-color: ${homeBgColor};
   // background-image: url(${homebgimage});
   // background-size: cover;
@@ -24,9 +31,9 @@ export const Expertise = styled.div`
 `;
 
 export const Hobbies = styled.div`
-  background-color: ${homeBgColor};
+  background-color: ${hobbiesBgColor};
 `;
 
 export const Contact = styled.div`
-  background-color: ${homeBgColor};
+  background-color: ${contactBgColor};
 `;

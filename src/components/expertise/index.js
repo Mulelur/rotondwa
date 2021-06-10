@@ -10,7 +10,6 @@ import {
   Row,
   Image,
   Image1,
-  Img,
   Avatar,
   Matrix,
   MatrixBody,
@@ -20,6 +19,7 @@ import {
   MatrixTitleContainer,
   SubjectRow,
   Link,
+  MMRow,
 } from "./styles/expertise";
 
 export default function Expertise({ children, ...restProps }) {
@@ -97,10 +97,6 @@ Expertise.Avatar = function ExpertiseAvatar({ children, ...restProps }) {
   return <Avatar {...restProps}>{children}</Avatar>;
 };
 
-Expertise.Img = function ExpertiseAvatar({ ...restProps }) {
-  return <Img {...restProps} />;
-};
-
 Expertise.SubjectRow = function ExpertiseSubjectRow({
   children,
   ...restProps
@@ -117,4 +113,8 @@ Expertise.MatrixTitleContainer = function ExpertiseMatrixTitleContainer({
 
 Expertise.Link = function ExpertiseLink({ children, ...restProps }) {
   return <Link {...restProps}>{children}</Link>;
+};
+
+Expertise.MMRow = function ExpertiseMMRow({ children, ...restProps }) {
+  return <MMRow {...restProps}>{children}</MMRow>;
 };

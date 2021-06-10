@@ -135,38 +135,16 @@ export const Image1 = styled.div`
   }
 `;
 
-export const Img = styled.img`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: morph 8s ease-in-out infinite 1s;
-  background-blend-mode: multiply;
-  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-
-  @keyframes morph {
-    0% {
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    50% {
-      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-    100% {
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-  }
-`;
-
 export const Matrix = styled.div`
-  margin: 3rem;
+  width: 25rem;
+  margin: 2rem;
   border: 1px dashed #ccc;
   padding: 2.5rem;
-  @media (max-width: 576px) {
-    max-width: 41rem;
+  @media (max-width: 745px) {
+    width: 35rem;
+  }
+  @media (max-width: 420px) {
+    width: 22rem;
   }
 `;
 
@@ -196,3 +174,14 @@ export const MatrixTitleContainer = styled.div`
 `;
 
 export const Link = styled.a``;
+
+export const MMRow = styled.div`
+  padding: 2rem;
+  display: flex;
+  transition: all 0.2s;
+  justify-content: space-around;
+  @media (max-width: 745px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;

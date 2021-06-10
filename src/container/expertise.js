@@ -4,6 +4,8 @@ import img from "../assets/tondi_1.jpeg";
 import { Heading2 } from "../components/expertise/styles/expertise";
 import { highSchool, vut } from "../components/expertise/data/subjectsData";
 import {
+  NOTURGENTANDALSONOTIMPORTANT,
+  NOTURGENTBUTIMPORTANT,
   URGENTANDIMPORTANT,
   URGENTBUTNOTIMPORTANT,
 } from "../components/expertise/data/manegementMatrixData";
@@ -64,7 +66,7 @@ export default function ExpertiseContainer() {
       <Expertise.MatrixTitleContainer>
         <Expertise.Heading2>Manegement Matrix</Expertise.Heading2>
       </Expertise.MatrixTitleContainer>
-      <Expertise.Row>
+      <Expertise.MMRow>
         <Expertise.Matrix>
           <Expertise.MatrixHeader>URGENT AND IMPORTANT</Expertise.MatrixHeader>
           <Expertise.MatrixBody>
@@ -91,7 +93,35 @@ export default function ExpertiseContainer() {
             </Expertise.MatrixList>
           </Expertise.MatrixBody>
         </Expertise.Matrix>
-      </Expertise.Row>
+      </Expertise.MMRow>
+      <Expertise.MMRow>
+        <Expertise.Matrix>
+          <Expertise.MatrixHeader>URGENT AND IMPORTANT</Expertise.MatrixHeader>
+          <Expertise.MatrixBody>
+            <Expertise.MatrixList>
+              {NOTURGENTBUTIMPORTANT.map((item) => {
+                return (
+                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
+                );
+              })}
+            </Expertise.MatrixList>
+          </Expertise.MatrixBody>
+        </Expertise.Matrix>
+        <Expertise.Matrix>
+          <Expertise.MatrixHeader>
+            URGENT BUT NOT IMPORTANT
+          </Expertise.MatrixHeader>
+          <Expertise.MatrixBody>
+            <Expertise.MatrixList>
+              {NOTURGENTANDALSONOTIMPORTANT.map((item) => {
+                return (
+                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
+                );
+              })}
+            </Expertise.MatrixList>
+          </Expertise.MatrixBody>
+        </Expertise.Matrix>
+      </Expertise.MMRow>
     </Expertise>
   );
 }

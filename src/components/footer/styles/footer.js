@@ -1,11 +1,13 @@
 import styled from "styled-components/macro";
+import { textColor1 } from "../../../color";
 
 export const Container = styled.div`
   width: 100wv;
   margin-top: 8rem;
   padding: 2rem;
   padding-bottom: 0;
-  color: inherit;
+  color: ${({ footer }) => footer && "#ccc"};
+  color: ${({ contact }) => contact && textColor1};
   @media (max-width: 560px) {
     margin-top: 7.2rem;
     padding: 0.7rem;
@@ -43,8 +45,7 @@ export const Heading3 = styled.h3`
 export const Text = styled.p`
   max-width: 28.125rem;
   padding-right: 1rem;
-  // color: #2b2b2b;
-  color: inherit;
+
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8;
@@ -70,6 +71,7 @@ export const ListItem = styled.li`
   font-size: 1.6rem;
   min-width: 12rem;
   padding: 1rem;
+  color: ${({ color }) => color};
 `;
 
 export const Link = styled.a`

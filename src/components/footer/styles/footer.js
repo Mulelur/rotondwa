@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 export const Container = styled.div`
-  // display: flex;
+  width: 100wv;
   margin-top: 8rem;
   padding: 2rem;
   padding-bottom: 0;

@@ -26,9 +26,9 @@ export default function AboutContainer() {
           </About.Text>
           <About.Text>
             <About.Link href={cv} target="_blank">
-              Dawonload cv &#8594
+              Dawonload cv
             </About.Link>
-            <About.Link>Download cover letter &#8594</About.Link>
+            <About.Link>Download cover letter</About.Link>
           </About.Text>
         </About.Column>
         <About.Column>

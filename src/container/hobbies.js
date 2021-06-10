@@ -30,8 +30,36 @@ export default function HobbiesContainer() {
                 </Hobbies.List>
               </Hobbies.Body>
             </Hobbies.Item>
-            <Hobbies.Heading2>📘 Reading</Hobbies.Heading2>
-            <Hobbies.Heading2>📺 Watching</Hobbies.Heading2>
+            <Hobbies.Item>
+              <Hobbies.Header>
+                <Hobbies.Heading2>📘 Reading</Hobbies.Heading2>
+              </Hobbies.Header>
+              <Hobbies.Body>
+                <Hobbies.List>
+                  <Hobbies.ListItem>
+                    Kevin Crawford - Bag of Spuds
+                  </Hobbies.ListItem>
+                  <Hobbies.ListItem>Let My People Go Surfing</Hobbies.ListItem>
+                  <Hobbies.ListItem>The Poor Mouth (Again)</Hobbies.ListItem>
+                </Hobbies.List>
+              </Hobbies.Body>
+            </Hobbies.Item>
+            <Hobbies.Item>
+              <Hobbies.Header>
+                <Hobbies.Heading2>📺 Watching</Hobbies.Heading2>
+              </Hobbies.Header>
+              <Hobbies.Body>
+                <Hobbies.List>
+                  <Hobbies.ListItem>
+                    Kevin Crawford - Bag of Spuds
+                  </Hobbies.ListItem>
+                  <Hobbies.ListItem>Series: Line of Duty</Hobbies.ListItem>
+                  <Hobbies.ListItem>
+                    Van's Surf: Sonic Souvenirs
+                  </Hobbies.ListItem>
+                </Hobbies.List>
+              </Hobbies.Body>
+            </Hobbies.Item>
           </Hobbies.MyHobbies>
         </Hobbies.Col>
       </Hobbies.Row>

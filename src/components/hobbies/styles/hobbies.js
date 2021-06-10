@@ -25,12 +25,13 @@ export const List = styled.ul`
   display: flex;
   justify-content: center;
   list-style: none;
-  flex-direction: column;
   margin: 0;
+  flex-direction: column;
 `;
 
 export const ListItem = styled.li`
   font-size: 1.6rem;
+  padding: 1.4rem;
 `;
 
 export const Avatar = styled.div`
@@ -94,4 +95,9 @@ export const Item = styled.div`
 
 export const MyHobbies = styled.div`
   display: flex;
+
+  padding: 1.9rem;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 `;

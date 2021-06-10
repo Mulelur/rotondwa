@@ -72,6 +72,7 @@ export const Slider = styled.div`
   @media (max-width: 515px) {
     display: block;
   }
+  z-index: 999;
 `;
 
 // export const

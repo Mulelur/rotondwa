@@ -23,6 +23,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  font-size: 1.6rem;
   padding: 1.5rem;
   font-weight: 800;
   line-height: 1.5;

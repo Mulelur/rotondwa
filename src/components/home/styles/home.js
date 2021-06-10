@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   padding: 1.2rem;
-  // margin-left: 3rem;
   color: #2b2b2b;
   @media (max-width: 760px) {
     margin-left: 1.2rem;

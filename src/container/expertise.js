@@ -15,7 +15,7 @@ export default function ExpertiseContainer() {
     <Expertise>
       <Expertise.Row>
         <Expertise.Col>
-          <Expertise.Heading1># www</Expertise.Heading1>
+          <Expertise.Heading1># My Expertise</Expertise.Heading1>
           <Expertise.Text>
             🌊 I spend a lot of time surfing both the ocean and the web.
             Optimising this website was an experiment to lower my online carbon

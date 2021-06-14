@@ -1,10 +1,10 @@
 export const highSchool = [
   { sbj: "English FAL" },
-  { sbj: "Sesotho HL" },
+  { sbj: "Tshivenda HL" },
   { sbj: "Mathematics " },
   { sbj: "Physical Science " },
-  { sbj: "Life Science" },
-  { sbj: "Geography" },
+  { sbj: "EGD" },
+  { sbj: "Machenical Engineering" },
   { sbj: "Life Orientation" },
 ];
 

@@ -2,6 +2,7 @@ import React from "react";
 import { About } from "../components";
 import aboutImg from "../assets/tondi_1.jpeg";
 import cv from "../assets/cv/Rotonda-Mulelu.pdf";
+import letter from "../assets/cv/rotonda_c_lette.pdf";
 
 export default function AboutContainer() {
   return (
@@ -28,7 +29,9 @@ export default function AboutContainer() {
             <About.Link href={cv} target="_blank">
               Dawonload cv
             </About.Link>
-            <About.Link>Download cover letter</About.Link>
+            <About.Link href={letter} target="_blank">
+              Download cover letter
+            </About.Link>
           </About.Text>
         </About.Column>
         <About.Column>

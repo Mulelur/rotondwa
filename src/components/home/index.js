@@ -1,5 +1,13 @@
 import React from "react";
-import { Column, Container, Text, Title, Link, Img } from "./styles/home";
+import {
+  Column,
+  Container,
+  Text,
+  Title,
+  Link,
+  Img,
+  Video,
+} from "./styles/home";
 
 export default function Home({ children, ...restprops }) {
   return <Container {...restprops}>{children}</Container>;
@@ -23,4 +31,8 @@ Home.Link = function HomeLink({ children, ...restprops }) {
 
 Home.Img = function HomeImg({ ...restprops }) {
   return <Img {...restprops} />;
+};
+
+Home.Video = function HomeVideo({ ...restprops }) {
+  return <Video {...restprops} />;
 };

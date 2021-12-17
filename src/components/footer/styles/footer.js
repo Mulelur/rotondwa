@@ -24,6 +24,9 @@ export const Row = styled.div`
 
 export const Column = styled.div`
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Image = styled.img`

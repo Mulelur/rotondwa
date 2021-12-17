@@ -65,3 +65,8 @@ export const Img = styled.img`
   max-width: 100%;
   height: auto;
 `;
+
+export const Video = styled.video`
+  width: 500px;
+  height: 500px;
+`;

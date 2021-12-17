@@ -20,6 +20,8 @@ import {
   SubjectRow,
   Link,
   MMRow,
+  Project,
+  Projects,
 } from "./styles/expertise";
 
 export default function Expertise({ children, ...restProps }) {
@@ -117,4 +119,8 @@ Expertise.Link = function ExpertiseLink({ children, ...restProps }) {
 
 Expertise.MMRow = function ExpertiseMMRow({ children, ...restProps }) {
   return <MMRow {...restProps}>{children}</MMRow>;
+};
+
+Expertise.Projects = function ExpertiseProjects({ children, ...restProps }) {
+  return <Projects {...restProps}>{children}</Projects>;
 };

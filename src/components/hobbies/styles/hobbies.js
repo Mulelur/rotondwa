@@ -1,14 +1,16 @@
 import styled from "styled-components/macro";
-import img from "../../../assets/waves-hero.svg";
 import img1 from "../../../assets/tondi_2.jpeg";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin-top: 2rem;
+`;
 
 export const Img = styled.img``;
 
 export const Row = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 export const Col = styled.div``;
@@ -42,9 +44,16 @@ export const Avatar = styled.div`
   @media (max-width: 1040px) {
     margin-bottom: 30px;
   }
+  ${({ small }) =>
+    small
+      ? ` 
+    min-width: 150px;
+  height: 150px;
+  padding: 3rem;
+  margin: 3rem;`
+      : ` min-width: 300px;
+  min-height: 300px;`}
 
-  min-width: 300px;
-  min-height: 300px;
   position: relative;
   border-radius: 100%;
 `;

@@ -3,6 +3,7 @@ import { Home } from "../components";
 import HomeIcon from "../icons";
 import img from "../assets/homeIcon.svg";
 import cv from "../assets/cv/Rotonda-Mulelu.pdf";
+import video from "../assets/video/02_HomeLoop.h264.m4v";
 import Typewiter from "typewriter-effect";
 
 export default function HomeContainer() {
@@ -18,10 +19,11 @@ export default function HomeContainer() {
             }}
             onInit={(typewiter) => {
               typewiter
-                .typeString("I Am A Digital Designer.")
+                .typeString("I Am Full Stuck developer.")
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString("I'M A Softwer Developer from the South.")
+                .typeString("I'M A Software Developer from the South.")
+                .pauseFor(1600)
                 .start();
             }}
           />
@@ -35,7 +37,8 @@ export default function HomeContainer() {
         </Home.Link>
       </Home.Column>
       <Home.Column>
-        <Home.Img src={img} />
+        {/* <Home.Img src={img} /> */}
+        <Home.Video src={video} autoPlay type="video/m4v" loop muted />
       </Home.Column>
     </Home>
   );

@@ -1,3 +1,4 @@
+// import projectLink from "react-router-dom";
 import styled from "styled-components/macro";
 import img from "../../../assets/tondi_1.jpeg";
 import img1 from "../../../assets/tondi_2.jpeg";
@@ -185,3 +186,7 @@ export const MMRow = styled.div`
     align-items: center;
   }
 `;
+
+export const Projects = styled.div``;
+
+export const Project = styled.div``;

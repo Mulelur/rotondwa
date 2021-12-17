@@ -16,8 +16,15 @@ export const Container = styled.div`
 
 export const Home = styled.div`
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   background-color: ${homeBgColor};
-  // background-image: url(${homebgimage});
+  background-image: linear-gradient(
+    101deg,
+    ${homeBgColor} 0%,
+    ${homeBgColor} 50%,
+    #fff 50%
+  );
   // background-size: cover;
 `;
 

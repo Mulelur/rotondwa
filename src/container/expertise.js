@@ -1,14 +1,5 @@
 import React from "react";
 import { Expertise } from "../components";
-import img from "../assets/tondi_1.jpeg";
-import { Heading2 } from "../components/expertise/styles/expertise";
-import { highSchool, vut } from "../components/expertise/data/subjectsData";
-import {
-  NOTURGENTANDALSONOTIMPORTANT,
-  NOTURGENTBUTIMPORTANT,
-  URGENTANDIMPORTANT,
-  URGENTBUTNOTIMPORTANT,
-} from "../components/expertise/data/manegementMatrixData";
 
 export default function ExpertiseContainer() {
   return (
@@ -46,82 +37,8 @@ export default function ExpertiseContainer() {
         </Expertise.Col>
       </Expertise.Row>
       <Expertise.SubjectRow>
-        <Expertise.Col>
-          <Heading2>## High school</Heading2>
-          <Expertise.List>
-            {highSchool.map((item) => {
-              return <Expertise.ListItem>{item.sbj}</Expertise.ListItem>;
-            })}
-          </Expertise.List>
-        </Expertise.Col>
-        <Expertise.Col>
-          <Heading2>## Modules</Heading2>
-          <Expertise.List>
-            {vut.map((item) => {
-              return <Expertise.ListItem>{item.sbj}</Expertise.ListItem>;
-            })}
-          </Expertise.List>
-        </Expertise.Col>
+        <Expertise.Heading2>Projects</Expertise.Heading2>
       </Expertise.SubjectRow>
-      <Expertise.MatrixTitleContainer>
-        <Expertise.Heading2>Manegement Matrix</Expertise.Heading2>
-      </Expertise.MatrixTitleContainer>
-      <Expertise.MMRow>
-        <Expertise.Matrix>
-          <Expertise.MatrixHeader>URGENT AND IMPORTANT</Expertise.MatrixHeader>
-          <Expertise.MatrixBody>
-            <Expertise.MatrixList>
-              {URGENTANDIMPORTANT.map((item) => {
-                return (
-                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
-                );
-              })}
-            </Expertise.MatrixList>
-          </Expertise.MatrixBody>
-        </Expertise.Matrix>
-        <Expertise.Matrix>
-          <Expertise.MatrixHeader>
-            URGENT BUT NOT IMPORTANT
-          </Expertise.MatrixHeader>
-          <Expertise.MatrixBody>
-            <Expertise.MatrixList>
-              {URGENTBUTNOTIMPORTANT.map((item) => {
-                return (
-                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
-                );
-              })}
-            </Expertise.MatrixList>
-          </Expertise.MatrixBody>
-        </Expertise.Matrix>
-      </Expertise.MMRow>
-      <Expertise.MMRow>
-        <Expertise.Matrix>
-          <Expertise.MatrixHeader>URGENT AND IMPORTANT</Expertise.MatrixHeader>
-          <Expertise.MatrixBody>
-            <Expertise.MatrixList>
-              {NOTURGENTBUTIMPORTANT.map((item) => {
-                return (
-                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
-                );
-              })}
-            </Expertise.MatrixList>
-          </Expertise.MatrixBody>
-        </Expertise.Matrix>
-        <Expertise.Matrix>
-          <Expertise.MatrixHeader>
-            URGENT BUT NOT IMPORTANT
-          </Expertise.MatrixHeader>
-          <Expertise.MatrixBody>
-            <Expertise.MatrixList>
-              {NOTURGENTANDALSONOTIMPORTANT.map((item) => {
-                return (
-                  <Expertise.MatrixListItem>{item}</Expertise.MatrixListItem>
-                );
-              })}
-            </Expertise.MatrixList>
-          </Expertise.MatrixBody>
-        </Expertise.Matrix>
-      </Expertise.MMRow>
     </Expertise>
   );
 }

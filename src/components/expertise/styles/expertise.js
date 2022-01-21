@@ -190,7 +190,7 @@ export const MMRow = styled.div`
 export const Projects = styled.div`
   margin: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 export const Project = styled.div`

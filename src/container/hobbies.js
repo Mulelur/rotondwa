@@ -6,13 +6,7 @@ export default function HobbiesContainer() {
   return (
     <Hobbies>
       <Hobbies.Row>
-        <Hobbies.Avatar small={true}>
-          <Hobbies.Image1></Hobbies.Image1>
-        </Hobbies.Avatar>
         <Hobbies.Avatar>
-          <Hobbies.Image1></Hobbies.Image1>
-        </Hobbies.Avatar>
-        <Hobbies.Avatar small={true}>
           <Hobbies.Image1></Hobbies.Image1>
         </Hobbies.Avatar>
       </Hobbies.Row>

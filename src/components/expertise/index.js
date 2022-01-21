@@ -22,6 +22,12 @@ import {
   MMRow,
   Project,
   Projects,
+  ProjectThmbnail,
+  ProjectName,
+  ProjectCreatedAT,
+  ProjectDemo,
+  ProjectCode,
+
 } from "./styles/expertise";
 
 export default function Expertise({ children, ...restProps }) {
@@ -123,4 +129,26 @@ Expertise.MMRow = function ExpertiseMMRow({ children, ...restProps }) {
 
 Expertise.Projects = function ExpertiseProjects({ children, ...restProps }) {
   return <Projects {...restProps}>{children}</Projects>;
+};
+
+Expertise.Project = function ExpertiseProject({ children, ...restProps }) {
+  return <Project {...restProps}>{children}</Project>;
+};
+
+Expertise.ProjectThmbnail = function ExpertiseProjectThmbnail({ children, ...restProps }) {
+  return <ProjectThmbnail {...restProps}>{children}</ProjectThmbnail>;
+};
+
+Expertise.ProjectName = function ExpertiseProjectName({ children, ...restProps }) {
+  return <ProjectName {...restProps}>{children}</ProjectName>;
+};
+
+Expertise.ProjectCreatedAT = function ExpertiseProjectCreatedAT({ children, ...restProps }) {
+  return <ProjectCreatedAT {...restProps}>{children}</ProjectCreatedAT>;
+};
+Expertise.ProjectDemo = function ExpertiseProjectDemo({children, ...restProps }) {
+  return <ProjectDemo {...restProps} >{children}</ProjectDemo>
+};
+Expertise.ProjectCode = function ExpertiseProjectCode({children , ...restProps }) {
+  return <ProjectCode {...restProps} >{children}</ProjectCode>
 };

@@ -187,6 +187,53 @@ export const MMRow = styled.div`
   }
 `;
 
-export const Projects = styled.div``;
+export const Projects = styled.div`
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+`;
 
-export const Project = styled.div``;
+export const Project = styled.div`
+width: 49rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+`;
+
+export const ProjectCode = styled.a`
+margin:  1rem 2rem;
+padding: 1.2rem;
+font-size: 1.4rem;
+background-color: beige;
+border-radius: 4px;
+color: black;
+    text-decoration: none;
+`;
+
+export const ProjectDemo = styled.a`
+margin:  1rem 2rem;
+padding: 1.2rem;
+font-size: 1.4rem;
+background-color: beige;
+border-radius: 4px;
+color: black;
+    text-decoration: none;
+`;
+
+export const ProjectCreatedAT = styled.span`
+font-size: 1.8rem;
+margin: 2rem;
+`;
+
+export const ProjectName = styled.span`
+  font-size: 1.8rem;
+  margin: 2rem;
+
+`;
+
+export const ProjectThmbnail = styled.div`
+    border-radius: 9px;
+    background-position: center;
+    background-size: cover;
+`;

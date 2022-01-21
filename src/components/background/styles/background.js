@@ -23,7 +23,7 @@ export const Home = styled.div`
     101deg,
     ${homeBgColor} 0%,
     ${homeBgColor} 50%,
-    #fff 50%
+    #FC8649 50%
   );
   // background-size: cover;
 `;

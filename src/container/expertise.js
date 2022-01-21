@@ -1,5 +1,9 @@
+import moment from "moment";
 import React from "react";
 import { Expertise } from "../components";
+import p1 from '../assets/screen-shots/form-it-ss.png';
+import p2 from '../assets/screen-shots/code-editor-ss.png';
+import p3 from '../assets/screen-shots/to-do-ss.png';
 
 export default function ExpertiseContainer() {
   return (
@@ -28,9 +32,6 @@ export default function ExpertiseContainer() {
           </Expertise.Text>
         </Expertise.Col>
         <Expertise.Col>
-          {/* <Expertise.Avatar>
-            <Expertise.Image></Expertise.Image>
-          </Expertise.Avatar> */}
           <Expertise.Avatar>
             <Expertise.Image1></Expertise.Image1>
           </Expertise.Avatar>
@@ -39,6 +40,56 @@ export default function ExpertiseContainer() {
       <Expertise.SubjectRow>
         <Expertise.Heading2>Projects</Expertise.Heading2>
       </Expertise.SubjectRow>
+       <Expertise.Projects>
+          <Expertise.Project >
+            <Expertise.ProjectThmbnail style={{
+              backgroundImage: `url(${p1})`,
+              width: '45rem',
+              height: '28rem'
+            }}>
+            </Expertise.ProjectThmbnail>
+            <Expertise.SubjectRow>
+            <Expertise.ProjectName>
+              My project
+            </Expertise.ProjectName>
+            <Expertise.ProjectCreatedAT>
+            created: 2021-11-05
+            </Expertise.ProjectCreatedAT>
+            </Expertise.SubjectRow>
+            <Expertise.SubjectRow>
+            <Expertise.ProjectDemo href="https://form-in-v2.netlify.app/recent">
+              View Demo
+            </Expertise.ProjectDemo>
+            <Expertise.ProjectCode href='https://github.com/Mulelur/form-it-'>
+              View Code
+            </Expertise.ProjectCode>
+            </Expertise.SubjectRow>
+          </Expertise.Project>
+          <Expertise.Project >
+            <Expertise.ProjectThmbnail style={{
+              backgroundImage: `url(${p2})`,
+              width: '45rem',
+              height: '28rem'
+            }}>
+            </Expertise.ProjectThmbnail>
+            <Expertise.SubjectRow>
+            <Expertise.ProjectName>
+              online code editor
+            </Expertise.ProjectName>
+            <Expertise.ProjectCreatedAT>
+              created: 2021-01-25
+            </Expertise.ProjectCreatedAT>
+            </Expertise.SubjectRow>
+            <Expertise.SubjectRow>
+            <Expertise.ProjectDemo href='https://webcode-editor-mulelur.netlify.app/'>
+              View Demo
+            </Expertise.ProjectDemo>
+            <Expertise.ProjectCode href='https://github.com/Mulelur/online-codeEditor'>
+              View Code
+            </Expertise.ProjectCode>
+            </Expertise.SubjectRow>
+          </Expertise.Project>
+        </Expertise.Projects>
     </Expertise>
   );
 }

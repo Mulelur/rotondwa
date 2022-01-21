@@ -37,8 +37,8 @@ export default function HomeContainer() {
         </Home.Link>
       </Home.Column>
       <Home.Column>
-        {/* <Home.Img src={img} /> */}
-        <Home.Video src={video} autoPlay type="video/m4v" loop muted />
+        <Home.Img src={img} />
+        {/* <Home.Video src={video} autoPlay type="video/m4v" loop muted /> */}
       </Home.Column>
     </Home>
   );

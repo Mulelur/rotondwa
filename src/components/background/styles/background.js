@@ -29,17 +29,22 @@ export const Home = styled.div`
 `;
 
 export const About = styled.div`
+width: 100vw;
+height: 100vh;
   background-color: ${aboutBgColor};
 `;
 
 export const Expertise = styled.div`
+width: 100vw;
   background-color: ${expertiseBgColor};
 `;
 
 export const Hobbies = styled.div`
+width: 100vw;
   background-color: ${hobbiesBgColor};
 `;
 
 export const Contact = styled.div`
+width: 100vw;
   background-color: ${contactBgColor};
 `;

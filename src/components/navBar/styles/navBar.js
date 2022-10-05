@@ -8,7 +8,7 @@ export const Container = styled.nav`
   align-items: center;
   font-size: 1.7rem;
   text-transform: capitalize;
-  color: #fff;
+  color: #bbbb;
   @media (max-width: 515px) {
     justify-content: flex-end;
     align-items: center;

@@ -5,6 +5,7 @@ import ContactPage from "./pages/contact";
 import ExpertisePage from "./pages/expertise";
 import HobbiesPage from "./pages/hobbies";
 import HomePage from "./pages/home";
+import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/what-i-do" component={ExpertisePage} />
         <Route path="/hobbies" component={HobbiesPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="*" component={NotFoundPage} />
       </Switch>
     </Router>
   );

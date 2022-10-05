@@ -1,9 +1,7 @@
 import React from "react";
 import { Home } from "../components";
-import HomeIcon from "../icons";
-import img from "../assets/homeIcon.svg";
+import img from "../assets/5484597.jpg";
 import cv from "../assets/cv/Rotonda-Mulelu.pdf";
-import video from "../assets/video/02_HomeLoop.h264.m4v";
 import Typewiter from "typewriter-effect";
 
 export default function HomeContainer() {

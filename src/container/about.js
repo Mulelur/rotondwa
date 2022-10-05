@@ -1,6 +1,6 @@
 import React from "react";
 import { About } from "../components";
-import aboutImg from "../assets/tondi_1.jpeg";
+import Img from "../assets/4005526.jpg";
 import cv from "../assets/cv/Rotonda-Mulelu.pdf";
 import letter from "../assets/cv/rotonda_c_lette.pdf";
 
@@ -36,7 +36,7 @@ export default function AboutContainer() {
         </About.Column>
         <About.Column>
           <About.Avatar>
-            <About.Img></About.Img>
+            <About.Img src={Img} />
           </About.Avatar>
         </About.Column>
       </About.Row>

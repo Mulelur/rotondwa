@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-import homebgimage from "../../../assets/bgImage/ilmenskie-tree-int-bough-4.svg";
 import {
   aboutBgColor,
   contactBgColor,
@@ -19,32 +18,32 @@ export const Home = styled.div`
   height: 100vh;
   overflow: hidden;
   background-color: ${homeBgColor};
-  background-image: linear-gradient(
-    101deg,
-    ${homeBgColor} 0%,
-    ${homeBgColor} 50%,
-    #FC8649 50%
-  );
+  background-color: #fff;
+  // background-image: linear-gradient(
+  //   101deg,
+  //   ${homeBgColor} 0%,
+  //   ${homeBgColor} 50%,
+  //   #fc8649 50%
+  // );
   // background-size: cover;
 `;
 
 export const About = styled.div`
-width: 100vw;
-height: 100vh;
-  background-color: ${aboutBgColor};
+  width: 100vw;
+  height: 100vh;
 `;
 
 export const Expertise = styled.div`
-width: 100vw;
+  width: 100vw;
   background-color: ${expertiseBgColor};
 `;
 
 export const Hobbies = styled.div`
-width: 100vw;
+  width: 100vw;
   background-color: ${hobbiesBgColor};
 `;
 
 export const Contact = styled.div`
-width: 100vw;
+  width: 100vw;
   background-color: ${contactBgColor};
 `;
